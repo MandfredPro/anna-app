@@ -71,7 +71,7 @@ const Home = ({ countries }: Props) => {
                             transition={{ duration: 0.2 }}
                         >
                             <CountryCard
-                                frenchName={country.name.nativeName?.fra?.common ?? country.name.common}
+                                frenchName={country.translations.fra.common ?? country.name.common}
                                 region={country.region}
                                 flag={country.flags.svg}
                                 code={country.cca3}

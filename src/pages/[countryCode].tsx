@@ -36,7 +36,7 @@ const CountryDetail = ({ country }: Props) => {
         setIsFavorite(!isFavorite);
     };
 
-    const nativeName = country.name.nativeName?.fra?.common ?? 'Nom en français non disponible';
+    const nativeName = country.translations.fra.common ?? 'Nom en français non disponible';
 
     return (
         <div className={styles.container}>

@@ -22,4 +22,10 @@ export interface Country {
     population: number;
     region: string;
     subregion: string;
+    translations: {
+        [key: string]: {
+            common: string;
+            official: string;
+        }
+    };
 }
